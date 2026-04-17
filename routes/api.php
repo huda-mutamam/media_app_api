@@ -31,7 +31,18 @@ Route::put('/prodi/{id}', [ProdiController::class, 'updateApi']);
 Route::delete('/prodi/{id}', [ProdiController::class, 'deleteApi']);
 
 Route::get('/mahasiswa', [MahasiswaController::class, 'getData']);
+Route::post('/mahasiswa', [MahasiswaController::class, 'storeApi']);
+Route::put('/mahasiswa/{id}', [MahasiswaController::class, 'updateApi']);
+Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'deleteApi']);
+
 
 Route::get('/kategori', [KategoriController::class, 'getData']);
+Route::post('/kategori', [KategoriController::class, 'storeApi']);
+Route::put('/kategori/{id}', [KategoriController::class, 'updateApi']);
+Route::delete('/kategori/{id}', [KategoriController::class, 'deleteApi']);
+
 
 Route::get('/media', [MediaController::class, 'getData']);
+Route::post('/media', [MediaController::class, 'storeApi']);
+Route::put('/media/{id}', [MediaController::class, 'updateApi']);
+Route::delete('/media/{id}', [MediaController::class, 'deleteApi']);
