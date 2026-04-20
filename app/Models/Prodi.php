@@ -15,5 +15,6 @@ class Prodi extends Model
 
     protected $fillable = [
         'prodi_nama',
+        'singkatan'
     ];
 }
